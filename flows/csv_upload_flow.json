@@ -1,0 +1,78 @@
+{
+  "value": {
+    "modules": [
+      {
+        "id": "csv_upload_flow",
+        "value": {
+          "type": "rawscript",
+          "language": "python3",
+          "path": "csv_upload_flow",
+          "input_transforms": {
+            "csv_content": {
+              "type": "static",
+              "value": "company_name,contact_email,contact_first_name,contact_last_name,phone_number,address,city,country,postal_code,tax_id,company_size\nAcme Corp,john.doe@acme.com,John,Doe,+1-555-0100,123 Business St,New York,USA,10001,TAX-123456,50-100\nBeta Inc,jane@beta.co,Jane,Smith,555.0200,456 Commerce Ave,San Francisco,USA,94105,TAX-789012,100-500\nGamma LLC,bob@gamma.io,Bob,Johnson,(555) 0300,789 Innovation Blvd,Austin,USA,73301,TAX-345678,10-50"
+            },
+            "api_base_url": {
+              "type": "static",
+              "value": "https://your-project-id.mockapi.io/api/v1"
+            },
+            "api_key": {
+              "type": "static",
+              "value": ""
+            },
+            "transformation_config": {
+              "type": "static",
+              "value": null
+            },
+            "encoding": {
+              "type": "static",
+              "value": null
+            },
+            "delimiter": {
+              "type": "static",
+              "value": null
+            }
+          }
+        }
+      }
+    ],
+    "failure_module": null,
+    "same_worker": false,
+    "timeout": 300,
+    "retry": {
+      "max_attempts": 3,
+      "delay": 1000
+    }
+  },
+  "schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "csv_content": {
+        "type": "string",
+        "description": "Raw CSV content as string"
+      },
+      "api_base_url": {
+        "type": "string",
+        "description": "Base URL for MockAPI.io endpoint"
+      },
+      "api_key": {
+        "type": "string",
+        "description": "Optional API key for authentication"
+      },
+      "transformation_config": {
+        "type": "object",
+        "description": "Optional configuration for custom transformations"
+      },
+      "encoding": {
+        "type": "string",
+        "description": "Character encoding (auto-detected if null)"
+      },
+      "delimiter": {
+        "type": "string",
+        "description": "CSV delimiter (auto-detected if null)"
+      }
+    },
+    "required": ["csv_content", "api_base_url"]
+  }
+}

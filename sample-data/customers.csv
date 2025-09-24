@@ -1,0 +1,11 @@
+company_name,contact_email,contact_first_name,contact_last_name,phone_number,address,city,country,postal_code,tax_id,company_size
+Acme Corp,john.doe@acme.com,John,Doe,+1-555-0100,123 Business St,New York,USA,10001,TAX-123456,50-100
+Beta Inc,jane@beta.co,Jane,Smith,555.0200,456 Commerce Ave,San Francisco,USA,94105,TAX-789012,100-500
+Gamma LLC,bob@gamma.io,Bob,Johnson,(555) 0300,789 Innovation Blvd,Austin,USA,73301,TAX-345678,10-50
+Delta Corp,sarah@delta.com,Sarah,Williams,555.0400,321 Corporate Dr,Chicago,USA,60601,TAX-901234,500-1000
+Epsilon Ltd,mike@epsilon.net,Mike,Brown,555-0500,654 Enterprise Way,Seattle,USA,98101,TAX-567890,100-500
+Zeta Inc,lisa@zeta.org,Lisa,Davis,555.0600,987 Startup St,Boston,USA,02101,TAX-234567,10-50
+Eta Corp,david@eta.biz,David,Miller,+1-555-0700,147 Tech Park,Denver,USA,80201,TAX-890123,50-100
+Theta LLC,emma@theta.io,Emma,Wilson,555.0800,258 Data Center,Miami,USA,33101,TAX-456789,100-500
+Iota Inc,alex@iota.com,Alex,Moore,555-0900,369 Cloud Ave,Phoenix,USA,85001,TAX-012345,500-1000
+Kappa Corp,sophia@kappa.net,Sophia,Taylor,+1-555-1000,741 AI Blvd,Las Vegas,USA,89101,TAX-678901,10-50
